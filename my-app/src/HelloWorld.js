@@ -6,7 +6,7 @@ export default class Helloworld extends React.Component{
     }
 
     render(){
-       return <h1>{this.hello('Sarah')}</h1> 
+       return <h1>{this.hello()}</h1> 
     }
 }
-
+//if the name variable is not passed into the function the result is "Hello, undefined"
