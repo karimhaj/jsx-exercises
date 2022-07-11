@@ -1,12 +1,16 @@
 import React from 'react'
 
+const nome = <h1>Paolo</h1>;
+
 export default class Helloworld extends React.Component{
     hello(name){
         return 'Hello, '+ name; 
     }
 
+
     render(){
-       return <h1>{this.hello()}</h1> 
+       return <h1>{this.hello(nome)}</h1>
     }
 }
-//if the name variable is not passed into the function the result is "Hello, undefined"
+
+//if the name variable contains a JSX expression instead of a string the result is "Hello, [Object, Object]"
